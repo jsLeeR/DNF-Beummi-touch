@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#131824">
+  <title>아라도 숙녀들</title>
+  <link rel="icon" href="art/star-mark.png">
+  <link rel="stylesheet" href="game.css">
+  <script defer src="models.js"></script>
+  <script defer src="silhouettes.js"></script>
+  <script defer src="game.js"></script>
+</head>
+<body>
+  <main class="game">
+    <header class="masthead">
+      <div class="brand">
+        <img src="art/star-mark.png" alt="" width="46" height="46">
+        <h1>아라도 숙녀들</h1>
+      </div>
+      <nav aria-label="게임 설정">
+        <button id="sound" type="button" aria-label="효과음" aria-pressed="false">
+          <span class="pixel-icon" data-icon="mute" aria-hidden="true"></span>
+          <span id="sound-label">소리 꺼짐</span>
+        </button>
+        <button id="help-open" type="button" aria-haspopup="dialog">
+          <span class="pixel-icon" data-icon="help" aria-hidden="true"></span>
+          <span>조작법</span>
+        </button>
+      </nav>
+    </header>
+
+    <section class="frame" aria-label="아라도 숙녀들 캐릭터">
+      <div id="cast" class="cast" role="group" aria-label="캐릭터 선택"></div>
+      <div class="scene" id="scene">
+        <div class="window-light" aria-hidden="true"></div>
+        <div class="ground-shadow" aria-hidden="true"></div>
+        <div class="actor" id="actor" role="group" aria-label="캐릭터 터치 영역">
+          <div class="breathing">
+            <div id="figure" class="figure">
+              <img id="portrait" alt="캐릭터 전신 도트" draggable="false">
+              <img id="floating-prop" alt="" draggable="false" hidden>
+              <div id="markers" aria-label="부위 선택"></div>
+            </div>
+          </div>
+        </div>
+        <div id="touch-fx" class="touch-fx" aria-hidden="true"></div>
+        <div id="hover-label" class="hover-label" aria-hidden="true" hidden></div>
+        <i class="corner nw"></i><i class="corner ne"></i><i class="corner sw"></i><i class="corner se"></i>
+      </div>
+
+      <div class="dialogue">
+        <div class="identity">
+          <div class="portrait-frame" aria-hidden="true"><img id="face" alt=""></div>
+          <div><span class="trade" id="trade"></span><h2 id="speaker"></h2></div>
+        </div>
+        <div class="speech" aria-live="polite" aria-atomic="true">
+          <p id="line"></p>
+        </div>
+      </div>
+    </section>
+    <footer class="controls">
+      <p><span class="pixel-icon" data-icon="touch" aria-hidden="true"></span><span>캐릭터를 터치해 보세요.</span></p>
+      <button id="guide" type="button" aria-pressed="false">
+        <span class="switch" aria-hidden="true"><i></i></span>
+        터치 위치 표시
+      </button>
+    </footer>
+  </main>
+
+  <dialog id="help" aria-labelledby="help-title">
+    <div class="help-heading"><h2 id="help-title">조작법</h2><button type="button" id="help-close" aria-label="닫기" autofocus>×</button></div>
+    <p>초상화를 눌러 캐릭터를 고르세요. 얼굴, 손, 옷이나 장비를 누르면 자세와 대사가 바뀌어요. ‘터치 위치 표시’를 켜면 누를 수 있는 곳이 나타나요.</p>
+    <div class="key-instruction"><kbd>Tab</kbd> 부위 이동 <span></span><kbd>Enter</kbd> 선택</div>
+    <button class="help-done" id="help-done" type="button">게임으로 돌아가기</button>
+  </dialog>
+</body>
+</html>

@@ -1,6 +1,6 @@
 # 아라도 숙녀들
 
-[게임 바로 받기 · Windows EXE](https://github.com/jsLeeR/DNF-Beummi-touch/releases/latest/download/AradoLadies.exe) · [전체 폴더 받기 · ZIP](https://github.com/jsLeeR/DNF-Beummi-touch/releases/latest/download/AradoLadies.zip)
+[게임 바로 받기 · Windows EXE](https://github.com/jsLeeR/DNF-Beummi-touch/releases/latest/download/AradoLadies.exe)
 
 캐릭터를 터치하면 자세와 대사가 바뀌는 도트 게임, 아라도 숙녀들
 나중에 꼴리면 대사 모션 캐릭터 추가할거임 

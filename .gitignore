@@ -1,0 +1,13 @@
+# Local builds and version history
+*.exe
+*.zip
+*.lnk
+버전관리/
+
+# Earlier prototypes and character design sheets
+/assets/
+/moonleaf/
+/star-atelier/originals/
+/star-atelier/rig.js
+/star-atelier/모델시안-*/
+/star-atelier/전신-도트-미리보기.png
